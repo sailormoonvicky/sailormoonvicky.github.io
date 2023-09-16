@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
      'assets/imgs/4.jpg',
      'assets/imgs/5.jpg',
      'assets/imgs/6.jpg',
-     '/assets/imgs/7.jpg'
+     'assets/imgs/7.jpg'
   ];
   const headerElement = document.querySelector("header");
 
