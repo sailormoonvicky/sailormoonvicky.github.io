@@ -2,7 +2,8 @@
 
 <span style="color: #F85C70;">Welcome to the repository for Vicky Zhenghan Hu's personal website!</span> This website provides an insight into Vicky's professional journey, skills, and contact information.
 
-![Website Screenshot](/Users/zhenghanhu/Frontend/Projects/zhengHan.github.io/assets/imgs/Screenshot.jpg)
+![Website Screenshot](/assets/imgs/Screenshot.jpg)
+![Website Linke](https://sailormoonvicky.github.io/)
 
 ## 🌈 Features
 
