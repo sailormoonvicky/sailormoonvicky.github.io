@@ -202,3 +202,21 @@ nav a:hover {
   clear: both;
   display: table;
 }
+
+.box {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.column.half {
+  flex: 0.48; /* Little less than half to allow for space in-between */
+}
