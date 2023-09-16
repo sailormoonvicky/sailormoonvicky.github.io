@@ -12,11 +12,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-}
-
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
   font-family: "Dosis", sans-serif;
   font-weight: 500;
   line-height: 1.2;
@@ -49,6 +44,9 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 13px;
+  opacity: .8;
+  color: #444;
 }
 
 header {
@@ -104,7 +102,7 @@ header {
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: #333;
+  background-color: #F85C70;
   padding: 10px 0;
 }
 
@@ -140,7 +138,27 @@ nav a:hover {
   padding: 10px;
 }
 
-.progress-bar {
+.person-info {
+  font-weight: 600;
+  font-size: 14px;
+  color: #343a40;
+}
+
+.period {
+  font-size: 15px;
+  color:#F85C70;
+}
+
+.job-title {
+  font-size:14px;
+  font-weight: bold;
+}
+
+.card {
+  color:#6c757d;
+}
+
+/* .progress-bar {
   width: 80%;
   background-color: #ddd;
   margin: 10px 0;
@@ -152,7 +170,35 @@ nav a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%; /* Change this value according to the skill level */
+  width: 50%;
   height: 100%;
-  background-color: green;
+  background-color: #F85C70;
+} */
+
+.card {
+  width: 450px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.progress-bar {
+  background-color: #F85C70;
+  color: white;
+  padding: 1px;
+  border-radius: 3px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f8f9fa;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
