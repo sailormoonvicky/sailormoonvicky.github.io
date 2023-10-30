@@ -4,10 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
      'assets/imgs/1.jpg',
      'assets/imgs/2.jpg',
      'assets/imgs/3.jpg',
-     'assets/imgs/4.jpg',
-     'assets/imgs/5.jpg',
-     'assets/imgs/6.jpg',
-     'assets/imgs/7.jpg'
+     'assets/imgs/4.jpg'
   ];
   const headerElement = document.querySelector("header");
 
@@ -20,5 +17,20 @@ document.addEventListener("DOMContentLoaded", function() {
      }
   }
 
-  setInterval(changeBackgroundImage, 2000);
+  setInterval(changeBackgroundImage, 5000);
 });
+
+function sendEmail() {
+  Email.send({
+    SecureToken:"81903ad9-ebec-46f3-ae24-8cbaed0cbcec",
+    To : 'victoriahuhh@gmail.com',
+    From : 'victoriahuhh@gmail.com',
+    Subject : "New Contact From Website",
+    Body : "Name: " + document.getElementById('name').value
+        + "<br> Email: " + document.getElementById('email').value
+        + "<br> Message: " + document.getElementById('message').value
+
+}).then(
+  message => alert("Message Sent Successfully!")
+);
+}

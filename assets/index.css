@@ -44,7 +44,7 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 13px;
+  font-size: 15px;
   opacity: .8;
   color: #444;
 }
@@ -99,6 +99,10 @@ header {
   margin: 0 10px;
   text-decoration: none;
   color: #fff;
+}
+
+#contact .social-icons a {
+  color:#212529;
 }
 
 nav {
@@ -158,6 +162,44 @@ nav a:hover {
   font-weight: bold;
 }
 
+table {
+  width: 1000px;
+  height: 450px;
+  display: table;
+  border-collapse: collapse;
+  text-indent: initial;
+  border: 1px solid #ccc;;
+}
+
+th {
+  text-align: center;
+  padding: 10px;
+  background-color: #F85C70;
+  color:#fff;
+  border: 1px solid #ccc;
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+  color:#6c757d;
+  border: 1px solid #ccc;
+}
+
+tr {
+  display:table-row;
+}
+
+
+
+td a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #F85C70;
+  color:#fff;
+  border-radius: 3px;
+}
+
 .card {
   width: 450px;
   padding: 20px;
@@ -187,32 +229,75 @@ nav a:hover {
   display: table;
 }
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
-}
-.column {
-  flex: 1;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.box {
-  width: 100%;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.row {
+.about-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 20px;
 }
 
-.column.half {
-  flex: 0.48;
+.text-container {
+  flex: 1;
+  margin: 2px;
+  padding: 2rem;
+  border: 1px solid #ccc;
+}
+
+.map-container {
+  flex: 1;
+  margin: 2px;
+  padding: 3rem;
+  position: relative;
+}
+
+.resume-container {
+  margin: 2px;
+  border: 1px;
+  padding: 2rem;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.connect {
+  flex:1;
+  padding: 2vw 4vw;
+}
+
+.contact-me {
+  flex: 1;
+}
+
+form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+form input, form textarea {
+  border: 0;
+  margin: 5px 0;
+  padding: 10px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 15px;
+}
+
+form button {
+  padding: 10px;
+  background:#F85C70;
+  color: #fff;
+  font-size: 15px;
+  border: 0;
+  outline: none;
+  cursor:pointer;
+  width: 100px;
+  margin: 10px auto 0;
+  border-radius: 20px;
 }
 
 #contact .social-icons a {
