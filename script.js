@@ -34,6 +34,3 @@ function sendEmail() {
 );
 }
 
-function findSmallestInt(arg) {
-  return Math.min(arg)
-}
