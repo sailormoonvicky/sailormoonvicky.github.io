@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const images = [
      'assets/imgs/1.jpg',
      'assets/imgs/2.jpg',
-     'assets/imgs/3.jpg',
-     'assets/imgs/4.jpg'
+     'assets/imgs/3.jpg'
   ];
   const headerElement = document.querySelector("header");
 
@@ -17,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
      }
   }
 
-  setInterval(changeBackgroundImage, 5000);
+  setInterval(changeBackgroundImage, 7000);
 });
 
 function sendEmail() {
@@ -33,4 +32,8 @@ function sendEmail() {
 }).then(
   message => alert("Message Sent Successfully!")
 );
+}
+
+function findSmallestInt(arg) {
+  return Math.min(arg)
 }
