@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function sendEmail() {
   Email.send({
-    SecureToken:"81903ad9-ebec-46f3-ae24-8cbaed0cbcec",
+    SecureToken:"698954f4-1f2c-4e8c-9e8d-75c7e73e2cf9",
     To : 'victoriahuhh@gmail.com',
     From : 'victoriahuhh@gmail.com',
     Subject : "New Contact From Website",
@@ -30,7 +30,11 @@ function sendEmail() {
         + "<br> Message: " + document.getElementById('message').value
 
 }).then(
-  message => alert("Message Sent Successfully!")
-);
+  message => {
+    alert("Message Sent Successfully!");
+  })
+  .catch(error => {
+    alert("Failed to send the message. Please try again later.");
+    console.error("Email sending error: ", error);
+  });
 }
-
