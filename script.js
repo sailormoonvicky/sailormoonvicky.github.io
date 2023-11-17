@@ -1,22 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
   let currentImageIndex = 0;
   const images = [
-     'assets/imgs/1.jpg',
-     'assets/imgs/2.jpg',
-     'assets/imgs/3.jpg'
+    'assets/imgs/1.jpg',
+    'assets/imgs/2.jpg',
+    'assets/imgs/3.jpg'
   ];
   const headerElement = document.querySelector("header");
+  headerElement.style.backgroundImage = `url(${images[currentImageIndex]})`;
 
   function changeBackgroundImage() {
-     headerElement.style.backgroundImage = `url(${images[currentImageIndex]})`;
-     currentImageIndex++;
-
-     if (currentImageIndex >= images.length) {
-        currentImageIndex = 0;
-     }
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    headerElement.style.backgroundImage = `url(${images[currentImageIndex]})`;
+    currentImageIndex++;
   }
 
-  setInterval(changeBackgroundImage, 7000);
+  setInterval(changeBackgroundImage, 5000);
 });
 
 function sendEmail() {
