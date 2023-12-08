@@ -1,7 +1,7 @@
 html {
   scroll-behavior: smooth;
   }
-  
+
 body {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -325,3 +325,4 @@ form button {
 .copyright {
   margin: 2em;
 }
+
